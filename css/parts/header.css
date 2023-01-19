@@ -1,0 +1,126 @@
+.header {
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 72px 0; 
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+}
+
+.header-title:hover {
+    cursor: pointer;
+}
+
+.header-title span {
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.header-title-img {
+    width: 30px;
+    margin-right: 12px;
+}
+
+.header-burger-overlay {
+    width: 45px;
+    height: 45px;
+    background-color: #111;
+    display: none;
+}
+
+.header-burger .open {
+    position: absolute;
+    z-index: 500;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 50vh;
+    padding: 50px 30px;
+}
+
+.header-burger-overlay-btns {
+    float: right;
+    min-width: 45px;
+    min-height: 45px;
+    display: none;
+}
+
+.header-burger-overlay-btns:hover {
+    cursor: pointer;
+}
+
+.header-burger-overlay-btns-close {
+    display: none;
+}
+
+.header-burger-overlay-navbar-list {
+    display: none;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.header-burger-overlay-navbar-list-item {
+    margin: 10px 0;
+}
+
+.header-navbar-list {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.header-navbar-list-item {
+    margin: 0 20px;
+}
+
+.header-button {
+    min-width: 180px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    border: #fff solid 2px;
+    height: 47px;
+    color: #fff;
+    background-color: #111;
+    padding: 14px 35px;
+    font-family: 'Inter', sans-serif; 
+}
+
+.header-button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1140px) {
+    .header {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 677px) { 
+    .header {
+        margin-bottom: 0;
+    }
+    
+    .header-navbar {
+        display: none;
+    }
+
+    .header-burger-overlay {
+        display: block;
+    }
+
+    .header-burger-overlay-btns {
+        display: block;
+    }
+
+    .header-button {
+        display: none;
+    }
+}

@@ -1,0 +1,133 @@
+.section_5-wrapper {
+    background-color: #1D1D1D;
+}
+
+.section_5 {
+    padding-top: 197px;
+}
+
+.section_5-header {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 75px;
+}
+
+.section_5-content {
+    display: flex;
+}
+
+.section_5-content-column {
+    flex: 0 0 50%;
+}
+
+.section_5-content-column:nth-child(1) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.section_5-content-column:nth-child(1) p {
+    max-width: 409px;
+}
+
+.section_5-content-column-block:first-child {
+    padding-bottom: 44px;
+}
+
+.section_5-content-column-block:nth-child(n+2) {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    padding: 44px 0;
+}
+
+.section_5-content-column-block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_5-content-column-block-header-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    margin-right: 20px;
+}
+
+#section_5-content-column-block-text_1 {
+    display: block;
+}
+
+.section_5-content-column-block-text {
+    display: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    padding: 29px 0 0 5px;
+}
+
+.section_5-content-column-block-text p {
+    max-width: 459px;
+}
+
+.section_5-content-column-block:nth-child(n+2) {
+    border-top: 2px solid #d9d9d90f;
+}
+
+.section_5-content-column-block-header-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    min-height: 28px;
+    background-color: #E3B748;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    user-select: none;
+}
+
+.section_5-content-column-block-header-control:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1140px) {
+    .section_5 {
+        padding-left: 30px; 
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 886px) {
+    .section_5 {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 865px) {
+    .section_5-content-column:first-child {
+        padding-right: 30px;        
+    }
+}
+
+@media (max-width: 658px) {
+    .section_5-content {
+        display: block;
+    }
+    
+    .section_5-content-column:first-child {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* JS */
+
+.section_5-content-column-block-text-visible {
+    display: block;
+    content: "-";
+}

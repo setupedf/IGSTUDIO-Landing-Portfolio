@@ -1,0 +1,48 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    line-height: 100%;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    min-width: 280px;
+    background-color: #111;
+    color: #fff;
+}
+
+p {
+    color: #fff;
+    opacity: 0.3;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+
+button, input {
+    outline: none;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
